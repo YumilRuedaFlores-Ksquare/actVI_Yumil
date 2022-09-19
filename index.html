@@ -51,6 +51,25 @@
         justify-content: space-between;
     }
 
+          /* Styling the Body element i.e. Color,
+        Font, Alignment */
+        body {
+            background-color: #05c46b;
+            font-family: Verdana;
+            text-align: center;
+        }
+
+        .form-control {
+                text-align: left;
+                margin-bottom: 25px;
+            }
+ 
+        /* Styling form-control Label */
+        .form-control label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
     
 </style>
 
@@ -69,6 +88,19 @@
                         <input type="text" name="email" id="email" placeholder="Email">
                     </div>
                 </form>
+
+                <!-- Details -->
+                <div class="form-control">
+                    <label for="name" id="label-name">
+                        Name
+                    </label>
+        
+                    <!-- Input Type Text -->
+                    <input type="text"
+                        id="name"
+                        placeholder="Enter your name" />
+                </div>
+
                 <!-- Password-->
                 <form style=" width: auto;" >
                     <div class = "form-element">
