@@ -29,7 +29,7 @@
         
     }
     .left{
-        background-color: aliceblue;
+        background-color: white;
         border-radius: 25px 0px 02px 25px;
         
         display: flex;
@@ -52,7 +52,7 @@
     }
     .survey{
         display: flex;
-        background-color: bisque;
+        /*background-color: bisque;*/
         flex-direction: column;
         width: 360px;     
         text-align: left;
@@ -66,8 +66,6 @@
         justify-content:space-between;
         
     }
-
-
     .form-text {
             text-align: left;
             margin-bottom: 25px;
@@ -136,7 +134,18 @@
         cursor: pointer;
         background-color: #101820e1;
     }
-
+    button.free{
+        background-color: transparent;
+        border: transparent;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width:auto;
+        height: fit-content;
+        font-weight: bolder;
+    }
+    button.free:hover{
+        cursor: pointer;
+    }
 </style>
 
 <body>
@@ -223,14 +232,19 @@
                     <div class="google-icon-wrapper">
                       <img class="google-icon" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"/>
                     </div>
-                    <p class="btn-text"><b>Sign in with google</b></p>
+                    <p class="btn-text"><b>Sign in with Google</b></p>
                 </div>
 
                 <div style="display: flex;  align-items: space-between; justify-content: center;">
-                    <p>
+                    <h5 style="color:#959597b8; ">
                         Don't have an account? 
-                        <button> Sign in up for free</button>
-                    </p>
+                    </h5>
+                        <div style="display:flex; flex-direction: column; margin-top:20px;">
+                            <button class="free"> Sign in up for free</button>
+                            <img src="img/signature.png" alt="decoration signature...">
+                        </div>
+                        
+                    
                 </div>
                 
             </div>
